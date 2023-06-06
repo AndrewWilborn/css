@@ -5,17 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Practice</title>
+
+    <style>
+        p {
+            color: green;
+        }
+
+        .class-purple{
+            color: purple;
+        }
+
+        p.paragraph-class-blue{
+            color: blue;
+        }
+        
+        p { 
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>CSS Practice</h1>
+    <h1 class = class-purple>CSS Practice</h1>
 
+    <p style="color: red;">This is a practice file with an inline style.</p>
+
+    <p class="class-purple">This is a practice file with a class specification.</p>
+    <p>This is a practice file.</p>
+    <p>This is a practice file.</p>
     <p>This is a practice file.</p>
 
-    <p>This is a practice file.</p>
-    <p>This is a practice file.</p>
-    <p>This is a practice file.</p>
-    <p>This is a practice file.</p>
-    
+    <h2 class="paragraph-class-blue">This won't be blue because its not a p object</h2>
+    <p class="paragraph-class-blue">This will be blue because it is a p class so p.paragraph-class-blue will apply</p>
+
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa id quos vel ut labore natus sunt quasi animi officiis, accusantium eum at? Dolores quibusdam recusandae neque odio reprehenderit possimus.</p>
 </body>
 </html>
